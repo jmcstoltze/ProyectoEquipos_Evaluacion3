@@ -36,6 +36,12 @@ Distribución:
 
 - Proyecto de instalación (setup) para facilitar la distribución e instalación de la aplicación en entornos locales.
 
+## Registro Audiovisual
+
+Registro audiovisual de la generación del ejecutable del proyecto en el siguiente enlace:
+
+[https://drive.google.com/file/d/1SemGHDxJm944THrmu_6Tz9jSjtksaHIE/view?usp=sharing]
+
 ## Autor
 
 Jose Contreras Stoltze
