@@ -1,0 +1,158 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="PCEModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'PCE.dbo.VwGetEquipos' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+        <EntityType Name="VwGetEquipos">
+          <Key>
+            <PropertyRef Name="EquipoId" />
+            <PropertyRef Name="NombreEquipo" />
+            <PropertyRef Name="CantidadJugadores" />
+            <PropertyRef Name="NombreDT" />
+            <PropertyRef Name="TipoEquipo" />
+            <PropertyRef Name="CapitanEquipo" />
+            <PropertyRef Name="TieneSub21" />
+          </Key>
+          <Property Name="EquipoId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="NombreEquipo" Type="varchar" MaxLength="255" Nullable="false" />
+          <Property Name="CantidadJugadores" Type="int" Nullable="false" />
+          <Property Name="NombreDT" Type="varchar" MaxLength="255" Nullable="false" />
+          <Property Name="TipoEquipo" Type="varchar" MaxLength="255" Nullable="false" />
+          <Property Name="CapitanEquipo" Type="varchar" MaxLength="255" Nullable="false" />
+          <Property Name="TieneSub21" Type="bit" Nullable="false" />
+        </EntityType>
+        <Function Name="spEquipoDeleteById" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="EquipoId" Type="int" Mode="In" />
+        </Function>
+        <Function Name="spEquipoSave" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="NombreEquipo" Type="varchar" Mode="In" />
+          <Parameter Name="CantidadJugadores" Type="int" Mode="In" />
+          <Parameter Name="NombreDT" Type="varchar" Mode="In" />
+          <Parameter Name="TipoEquipo" Type="varchar" Mode="In" />
+          <Parameter Name="CapitanEquipo" Type="varchar" Mode="In" />
+          <Parameter Name="TieneSub21" Type="bit" Mode="In" />
+        </Function>
+        <Function Name="spEquipoUpdateById" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="EquipoId" Type="int" Mode="In" />
+          <Parameter Name="NombreEquipo" Type="varchar" Mode="In" />
+          <Parameter Name="CantidadJugadores" Type="int" Mode="In" />
+          <Parameter Name="NombreDT" Type="varchar" Mode="In" />
+          <Parameter Name="TipoEquipo" Type="varchar" Mode="In" />
+          <Parameter Name="CapitanEquipo" Type="varchar" Mode="In" />
+          <Parameter Name="TieneSub21" Type="bit" Mode="In" />
+        </Function>
+        <Function Name="spObtenerCantidadEquiposFemeninos" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="spObtenerCantidadEquiposMasculinos" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <EntityContainer Name="PCEModelStoreContainer">
+          <EntitySet Name="VwGetEquipos" EntityType="Self.VwGetEquipos" store:Type="Views" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [VwGetEquipos].[EquipoId] AS [EquipoId], 
+    [VwGetEquipos].[NombreEquipo] AS [NombreEquipo], 
+    [VwGetEquipos].[CantidadJugadores] AS [CantidadJugadores], 
+    [VwGetEquipos].[NombreDT] AS [NombreDT], 
+    [VwGetEquipos].[TipoEquipo] AS [TipoEquipo], 
+    [VwGetEquipos].[CapitanEquipo] AS [CapitanEquipo], 
+    [VwGetEquipos].[TieneSub21] AS [TieneSub21]
+    FROM [dbo].[VwGetEquipos] AS [VwGetEquipos]</DefiningQuery>
+          </EntitySet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="PCEModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="VwGetEquipos">
+          <Key>
+            <PropertyRef Name="EquipoId" />
+            <PropertyRef Name="NombreEquipo" />
+            <PropertyRef Name="CantidadJugadores" />
+            <PropertyRef Name="NombreDT" />
+            <PropertyRef Name="TipoEquipo" />
+            <PropertyRef Name="CapitanEquipo" />
+            <PropertyRef Name="TieneSub21" />
+          </Key>
+          <Property Name="EquipoId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="NombreEquipo" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="CantidadJugadores" Type="Int32" Nullable="false" />
+          <Property Name="NombreDT" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="TipoEquipo" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="CapitanEquipo" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="TieneSub21" Type="Boolean" Nullable="false" />
+        </EntityType>
+        <EntityContainer Name="PCEEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="VwGetEquipos" EntityType="Self.VwGetEquipos" />
+          <FunctionImport Name="spEquipoDeleteById">
+            <Parameter Name="EquipoId" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="spEquipoSave">
+            <Parameter Name="NombreEquipo" Mode="In" Type="String" />
+            <Parameter Name="CantidadJugadores" Mode="In" Type="Int32" />
+            <Parameter Name="NombreDT" Mode="In" Type="String" />
+            <Parameter Name="TipoEquipo" Mode="In" Type="String" />
+            <Parameter Name="CapitanEquipo" Mode="In" Type="String" />
+            <Parameter Name="TieneSub21" Mode="In" Type="Boolean" />
+          </FunctionImport>
+          <FunctionImport Name="spEquipoUpdateById">
+            <Parameter Name="EquipoId" Mode="In" Type="Int32" />
+            <Parameter Name="NombreEquipo" Mode="In" Type="String" />
+            <Parameter Name="CantidadJugadores" Mode="In" Type="Int32" />
+            <Parameter Name="NombreDT" Mode="In" Type="String" />
+            <Parameter Name="TipoEquipo" Mode="In" Type="String" />
+            <Parameter Name="CapitanEquipo" Mode="In" Type="String" />
+            <Parameter Name="TieneSub21" Mode="In" Type="Boolean" />
+          </FunctionImport>
+          <FunctionImport Name="spObtenerCantidadEquiposFemeninos" ReturnType="Collection(Int32)" />
+          <FunctionImport Name="spObtenerCantidadEquiposMasculinos" ReturnType="Collection(Int32)" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="PCEModelStoreContainer" CdmEntityContainer="PCEEntities">
+          <EntitySetMapping Name="VwGetEquipos">
+            <EntityTypeMapping TypeName="PCEModel.VwGetEquipos">
+              <MappingFragment StoreEntitySet="VwGetEquipos">
+                <ScalarProperty Name="EquipoId" ColumnName="EquipoId" />
+                <ScalarProperty Name="NombreEquipo" ColumnName="NombreEquipo" />
+                <ScalarProperty Name="CantidadJugadores" ColumnName="CantidadJugadores" />
+                <ScalarProperty Name="NombreDT" ColumnName="NombreDT" />
+                <ScalarProperty Name="TipoEquipo" ColumnName="TipoEquipo" />
+                <ScalarProperty Name="CapitanEquipo" ColumnName="CapitanEquipo" />
+                <ScalarProperty Name="TieneSub21" ColumnName="TieneSub21" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <FunctionImportMapping FunctionImportName="spEquipoDeleteById" FunctionName="PCEModel.Store.spEquipoDeleteById" />
+          <FunctionImportMapping FunctionImportName="spEquipoSave" FunctionName="PCEModel.Store.spEquipoSave" />
+          <FunctionImportMapping FunctionImportName="spEquipoUpdateById" FunctionName="PCEModel.Store.spEquipoUpdateById" />
+          <FunctionImportMapping FunctionImportName="spObtenerCantidadEquiposFemeninos" FunctionName="PCEModel.Store.spObtenerCantidadEquiposFemeninos" />
+          <FunctionImportMapping FunctionImportName="spObtenerCantidadEquiposMasculinos" FunctionName="PCEModel.Store.spObtenerCantidadEquiposMasculinos" />
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="Ninguno" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

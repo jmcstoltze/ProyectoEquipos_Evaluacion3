@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="PCEModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="VwGetEquipos">
+    <Key>
+      <PropertyRef Name="EquipoId" />
+      <PropertyRef Name="NombreEquipo" />
+      <PropertyRef Name="CantidadJugadores" />
+      <PropertyRef Name="NombreDT" />
+      <PropertyRef Name="TipoEquipo" />
+      <PropertyRef Name="CapitanEquipo" />
+      <PropertyRef Name="TieneSub21" />
+    </Key>
+    <Property Name="EquipoId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="NombreEquipo" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="CantidadJugadores" Type="Int32" Nullable="false" />
+    <Property Name="NombreDT" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="TipoEquipo" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="CapitanEquipo" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="TieneSub21" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="PCEEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="VwGetEquipos" EntityType="Self.VwGetEquipos" />
+    <FunctionImport Name="spEquipoDeleteById">
+      <Parameter Name="EquipoId" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="spEquipoSave">
+      <Parameter Name="NombreEquipo" Mode="In" Type="String" />
+      <Parameter Name="CantidadJugadores" Mode="In" Type="Int32" />
+      <Parameter Name="NombreDT" Mode="In" Type="String" />
+      <Parameter Name="TipoEquipo" Mode="In" Type="String" />
+      <Parameter Name="CapitanEquipo" Mode="In" Type="String" />
+      <Parameter Name="TieneSub21" Mode="In" Type="Boolean" />
+    </FunctionImport>
+    <FunctionImport Name="spEquipoUpdateById">
+      <Parameter Name="EquipoId" Mode="In" Type="Int32" />
+      <Parameter Name="NombreEquipo" Mode="In" Type="String" />
+      <Parameter Name="CantidadJugadores" Mode="In" Type="Int32" />
+      <Parameter Name="NombreDT" Mode="In" Type="String" />
+      <Parameter Name="TipoEquipo" Mode="In" Type="String" />
+      <Parameter Name="CapitanEquipo" Mode="In" Type="String" />
+      <Parameter Name="TieneSub21" Mode="In" Type="Boolean" />
+    </FunctionImport>
+    <FunctionImport Name="spObtenerCantidadEquiposFemeninos" ReturnType="Collection(Int32)" />
+    <FunctionImport Name="spObtenerCantidadEquiposMasculinos" ReturnType="Collection(Int32)" />
+  </EntityContainer>
+</Schema>

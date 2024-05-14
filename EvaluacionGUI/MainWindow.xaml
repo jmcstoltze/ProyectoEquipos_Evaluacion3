@@ -1,0 +1,22 @@
+﻿<Window x:Class="EvaluacionGUI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:EvaluacionGUI"
+        mc:Ignorable="d"
+        Title="Equipos de Fútbol" Height="450" Width="900" Activated="Window_Activated">
+    <DockPanel LastChildFill="False">
+        <Menu IsMainMenu="True" DockPanel.Dock="Top" Height="20" Width="Auto" x:Name="menuPrincipal" Margin="0,0,0,10">
+            <MenuItem Header="Administración">
+                <MenuItem Header="Agregar Equipo" x:Name="optAgregarEquipo" Click="optAgregarEquipo_Click"/>
+                <MenuItem Header="Listar Equipos" x:Name="optListarEquipos" Click="optListarEquipos_Click"/>
+            </MenuItem>
+            <MenuItem x:Name="btnReportes" Header="Información">
+                <MenuItem Header="Acerca De" x:Name="optAcercaDe"  Click="optAcercaDe_Click"/>
+                <MenuItem Header="Reportes" x:Name="optReportes" Click="optReportes_Click"/>
+            </MenuItem>
+        </Menu>
+        <DataGrid x:Name="dgListadoEquipos" Width="Auto" Height="Auto" Margin="0,40,0,40" DockPanel.Dock="Top" IsEnabled="False" CanUserAddRows="False" AutoGeneratingColumn="dgListadoEquipos_AutoGeneratingColumn"/>
+    </DockPanel>
+</Window>

@@ -1,0 +1,12 @@
+C:\Users\jmcon\OneDrive\Documentos\000_IPLACEX _2022-2023\09_PROGRAMACION_COMPONENTES_ESCRITORIO\proyectos\Evaluacion2\EvaluacionDALC\bin\Debug\EvaluacionDALC.dll.config
+C:\Users\jmcon\OneDrive\Documentos\000_IPLACEX _2022-2023\09_PROGRAMACION_COMPONENTES_ESCRITORIO\proyectos\Evaluacion2\EvaluacionDALC\bin\Debug\EvaluacionDALC.dll
+C:\Users\jmcon\OneDrive\Documentos\000_IPLACEX _2022-2023\09_PROGRAMACION_COMPONENTES_ESCRITORIO\proyectos\Evaluacion2\EvaluacionDALC\bin\Debug\EvaluacionDALC.pdb
+C:\Users\jmcon\OneDrive\Documentos\000_IPLACEX _2022-2023\09_PROGRAMACION_COMPONENTES_ESCRITORIO\proyectos\Evaluacion2\EvaluacionDALC\bin\Debug\EntityFramework.dll
+C:\Users\jmcon\OneDrive\Documentos\000_IPLACEX _2022-2023\09_PROGRAMACION_COMPONENTES_ESCRITORIO\proyectos\Evaluacion2\EvaluacionDALC\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\jmcon\OneDrive\Documentos\000_IPLACEX _2022-2023\09_PROGRAMACION_COMPONENTES_ESCRITORIO\proyectos\Evaluacion2\EvaluacionDALC\bin\Debug\EntityFramework.xml
+C:\Users\jmcon\OneDrive\Documentos\000_IPLACEX _2022-2023\09_PROGRAMACION_COMPONENTES_ESCRITORIO\proyectos\Evaluacion2\EvaluacionDALC\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\jmcon\OneDrive\Documentos\000_IPLACEX _2022-2023\09_PROGRAMACION_COMPONENTES_ESCRITORIO\proyectos\Evaluacion2\EvaluacionDALC\obj\Debug\EvaluacionDALC.csproj.AssemblyReference.cache
+C:\Users\jmcon\OneDrive\Documentos\000_IPLACEX _2022-2023\09_PROGRAMACION_COMPONENTES_ESCRITORIO\proyectos\Evaluacion2\EvaluacionDALC\obj\Debug\EvaluacionDALC.csproj.CoreCompileInputs.cache
+C:\Users\jmcon\OneDrive\Documentos\000_IPLACEX _2022-2023\09_PROGRAMACION_COMPONENTES_ESCRITORIO\proyectos\Evaluacion2\EvaluacionDALC\obj\Debug\Evaluaci.C700E35F.Up2Date
+C:\Users\jmcon\OneDrive\Documentos\000_IPLACEX _2022-2023\09_PROGRAMACION_COMPONENTES_ESCRITORIO\proyectos\Evaluacion2\EvaluacionDALC\obj\Debug\EvaluacionDALC.dll
+C:\Users\jmcon\OneDrive\Documentos\000_IPLACEX _2022-2023\09_PROGRAMACION_COMPONENTES_ESCRITORIO\proyectos\Evaluacion2\EvaluacionDALC\obj\Debug\EvaluacionDALC.pdb

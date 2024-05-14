@@ -1,0 +1,15 @@
+C:\Users\jmcon\OneDrive\Documentos\000_IPLACEX _2022-2023\09_PROGRAMACION_COMPONENTES_ESCRITORIO\proyectos\Evaluacion3\EvaluacionNegocio\bin\Release\EvaluacionNegocio.dll.config
+C:\Users\jmcon\OneDrive\Documentos\000_IPLACEX _2022-2023\09_PROGRAMACION_COMPONENTES_ESCRITORIO\proyectos\Evaluacion3\EvaluacionNegocio\bin\Release\EvaluacionNegocio.dll
+C:\Users\jmcon\OneDrive\Documentos\000_IPLACEX _2022-2023\09_PROGRAMACION_COMPONENTES_ESCRITORIO\proyectos\Evaluacion3\EvaluacionNegocio\bin\Release\EvaluacionNegocio.pdb
+C:\Users\jmcon\OneDrive\Documentos\000_IPLACEX _2022-2023\09_PROGRAMACION_COMPONENTES_ESCRITORIO\proyectos\Evaluacion3\EvaluacionNegocio\bin\Release\EntityFramework.dll
+C:\Users\jmcon\OneDrive\Documentos\000_IPLACEX _2022-2023\09_PROGRAMACION_COMPONENTES_ESCRITORIO\proyectos\Evaluacion3\EvaluacionNegocio\bin\Release\EntityFramework.SqlServer.dll
+C:\Users\jmcon\OneDrive\Documentos\000_IPLACEX _2022-2023\09_PROGRAMACION_COMPONENTES_ESCRITORIO\proyectos\Evaluacion3\EvaluacionNegocio\bin\Release\EvaluacionDALC.dll
+C:\Users\jmcon\OneDrive\Documentos\000_IPLACEX _2022-2023\09_PROGRAMACION_COMPONENTES_ESCRITORIO\proyectos\Evaluacion3\EvaluacionNegocio\bin\Release\EvaluacionDALC.pdb
+C:\Users\jmcon\OneDrive\Documentos\000_IPLACEX _2022-2023\09_PROGRAMACION_COMPONENTES_ESCRITORIO\proyectos\Evaluacion3\EvaluacionNegocio\bin\Release\EvaluacionDALC.dll.config
+C:\Users\jmcon\OneDrive\Documentos\000_IPLACEX _2022-2023\09_PROGRAMACION_COMPONENTES_ESCRITORIO\proyectos\Evaluacion3\EvaluacionNegocio\bin\Release\EntityFramework.xml
+C:\Users\jmcon\OneDrive\Documentos\000_IPLACEX _2022-2023\09_PROGRAMACION_COMPONENTES_ESCRITORIO\proyectos\Evaluacion3\EvaluacionNegocio\bin\Release\EntityFramework.SqlServer.xml
+C:\Users\jmcon\OneDrive\Documentos\000_IPLACEX _2022-2023\09_PROGRAMACION_COMPONENTES_ESCRITORIO\proyectos\Evaluacion3\EvaluacionNegocio\obj\Release\EvaluacionNegocio.csproj.AssemblyReference.cache
+C:\Users\jmcon\OneDrive\Documentos\000_IPLACEX _2022-2023\09_PROGRAMACION_COMPONENTES_ESCRITORIO\proyectos\Evaluacion3\EvaluacionNegocio\obj\Release\EvaluacionNegocio.csproj.CoreCompileInputs.cache
+C:\Users\jmcon\OneDrive\Documentos\000_IPLACEX _2022-2023\09_PROGRAMACION_COMPONENTES_ESCRITORIO\proyectos\Evaluacion3\EvaluacionNegocio\obj\Release\Evaluaci.47EA3D5C.Up2Date
+C:\Users\jmcon\OneDrive\Documentos\000_IPLACEX _2022-2023\09_PROGRAMACION_COMPONENTES_ESCRITORIO\proyectos\Evaluacion3\EvaluacionNegocio\obj\Release\EvaluacionNegocio.dll
+C:\Users\jmcon\OneDrive\Documentos\000_IPLACEX _2022-2023\09_PROGRAMACION_COMPONENTES_ESCRITORIO\proyectos\Evaluacion3\EvaluacionNegocio\obj\Release\EvaluacionNegocio.pdb
